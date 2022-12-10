@@ -1,12 +1,14 @@
 ﻿#include <iostream>
 #include <Windows.h>
-#define MODE 2
+#define MODE 1
 #ifndef MODE
 #error MODE не обьявлен
 #else
 
-
+#if MODE == 1
 void add();
+#endif
+
 int main()
 {
     setlocale(LC_ALL, "Russian");
